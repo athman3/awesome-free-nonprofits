@@ -1,55 +1,177 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A curated list of awesome free services, tools, and resources for nonprofit organizations. Discover cloud infrastructure, design tools, marketing resources, and more." />
-    <meta name="keywords" content="nonprofits, free services, resources, tools, nonprofit organizations, charity, NGO" />
-    <meta property="og:title" content="Awesome Free Nonprofits" />
-    <meta property="og:description" content="A curated list of awesome free services and resources for nonprofit organizations" />
-    <meta property="og:type" content="website" />
-    <title>Awesome Free Nonprofits - Free Services & Resources for Nonprofits</title>
-    <style>
-      /* Force dark background immediately if dark mode is active */
-      /* This prevents flash of white content before React loads */
-      html.dark,
-      html.dark body {
-        background-color: hsl(222.2, 84%, 4.9%) !important;
-        color: hsl(210, 40%, 98%) !important;
-      }
-    </style>
-    <script>
-      // Apply theme immediately to prevent flash of white content (FOUC)
-      // This script runs synchronously before React renders
-      (function() {
-        const storageKey = 'awesome-nonprofits-theme';
-        const defaultTheme = 'system';
-        
-        const getThemePreference = () => {
-          if (typeof localStorage !== 'undefined' && localStorage.getItem(storageKey)) {
-            return localStorage.getItem(storageKey);
-          }
-          return defaultTheme;
-        };
-        
-        const storedTheme = getThemePreference();
-        let theme = storedTheme;
-        
-        if (theme === 'system') {
-          const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
-            ? 'dark'
-            : 'light';
-          theme = systemTheme;
-        }
-        
-        const isDark = theme === 'dark';
-        document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
-      })();
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="canonical" href="https://nonprofits.athman3.com/" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Primary Meta Tags -->
+        <title>
+            Awesome Free Nonprofits - Free Services & Resources for Nonprofits
+        </title>
+        <meta
+            name="title"
+            content="Awesome Free Nonprofits - Free Services & Resources for Nonprofits"
+        />
+        <meta
+            name="description"
+            content="A curated list of awesome free services, tools, and resources for nonprofit organizations. Discover cloud infrastructure, design tools, marketing resources, and more."
+        />
+        <meta
+            name="keywords"
+            content="nonprofits, free services, resources, tools, nonprofit organizations, charity, NGO, software grants, techsoup, google for nonprofits, aws for nonprofits, slack for nonprofits"
+        />
+        <meta name="author" content="athman3" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://nonprofits.athman3.com/" />
+        <meta
+            property="og:title"
+            content="Awesome Free Nonprofits - Free Services & Resources for Nonprofits"
+        />
+        <meta
+            property="og:description"
+            content="A curated list of awesome free services, tools, and resources for nonprofit organizations. Discover cloud infrastructure, design tools, marketing resources, and more."
+        />
+        <meta
+            property="og:image"
+            content="https://nonprofits.athman3.com/og-image.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+            property="og:image:alt"
+            content="Awesome Free Nonprofits Preview"
+        />
+        <meta property="og:site_name" content="Awesome Free Nonprofits" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+            property="twitter:url"
+            content="https://nonprofits.athman3.com/"
+        />
+        <meta
+            property="twitter:title"
+            content="Awesome Free Nonprofits - Free Services & Resources for Nonprofits"
+        />
+        <meta
+            property="twitter:description"
+            content="A curated list of awesome free services, tools, and resources for nonprofit organizations. Discover cloud infrastructure, design tools, marketing resources, and more."
+        />
+        <meta
+            property="twitter:image"
+            content="https://nonprofits.athman3.com/og-image.png"
+        />
+
+        <!-- Structured Data -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "Awesome Free Nonprofits",
+                "url": "https://nonprofits.athman3.com/",
+                "description": "A curated list of awesome free services and resources for nonprofit organizations",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://nonprofits.athman3.com/?q={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                }
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "ItemList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Infrastructure & Security"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Design & Creative"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Communication & Collaboration"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "name": "Marketing & CRM"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 5,
+                        "name": "Productivity & Analytics"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 6,
+                        "name": "Education & Training"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 7,
+                        "name": "Business & Operations"
+                    }
+                ]
+            }
+        </script>
+        <style>
+            /* Force dark background immediately if dark mode is active */
+            /* This prevents flash of white content before React loads */
+            html.dark,
+            html.dark body {
+                background-color: hsl(222.2, 84%, 4.9%) !important;
+                color: hsl(210, 40%, 98%) !important;
+            }
+        </style>
+        <script>
+            // Apply theme immediately to prevent flash of white content (FOUC)
+            // This script runs synchronously before React renders
+            (function () {
+                const storageKey = "awesome-nonprofits-theme";
+                const defaultTheme = "system";
+
+                const getThemePreference = () => {
+                    if (
+                        typeof localStorage !== "undefined" &&
+                        localStorage.getItem(storageKey)
+                    ) {
+                        return localStorage.getItem(storageKey);
+                    }
+                    return defaultTheme;
+                };
+
+                const storedTheme = getThemePreference();
+                let theme = storedTheme;
+
+                if (theme === "system") {
+                    const systemTheme = window.matchMedia(
+                        "(prefers-color-scheme: dark)"
+                    ).matches
+                        ? "dark"
+                        : "light";
+                    theme = systemTheme;
+                }
+
+                const isDark = theme === "dark";
+                document.documentElement.classList[isDark ? "add" : "remove"](
+                    "dark"
+                );
+            })();
+        </script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+    </body>
 </html>

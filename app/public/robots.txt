@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nonprofits.athman3.com/sitemap.xml
