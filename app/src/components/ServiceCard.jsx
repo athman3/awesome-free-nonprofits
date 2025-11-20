@@ -12,16 +12,30 @@ import { Button } from "@/components/ui/button"
  * @param {string} props.service.name - Service name
  * @param {string} props.service.url - Service URL
  * @param {string} props.service.description - Service description
+ * @param {string} props.service.logo - Logo path (optional)
  * @param {string[]} props.service.categories - Service categories
  * @param {Function} props.onCategoryClick - Callback when category badge is clicked
  */
 export function ServiceCard({ service, onCategoryClick }) {
   return (
-    <Card className="h-full min-h-[450px] flex flex-col transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+    <Card className="h-full min-h-[450px] flex flex-col transition-all duration-300 hover:shadow-md hover:-translate-y-0.5">
       <CardHeader className="pb-4">
-        <CardTitle className="text-2xl mb-2">
-          <span className="truncate">{service.name}</span>
-        </CardTitle>
+        <div className="flex items-center gap-3 mb-2">
+          {service.logo && (
+            <img
+              src={service.logo}
+              alt={`${service.name} logo`}
+              className="h-7 w-7 object-contain flex-shrink-0 ml-2"
+              onError={(e) => {
+                // Hide image on error (fallback to no logo)
+                e.target.style.display = 'none';
+              }}
+            />
+          )}
+          <CardTitle className="text-2xl">
+            <span className="truncate">{service.name}</span>
+          </CardTitle>
+        </div>
         <div className="flex flex-wrap gap-2 mt-3">
           {service.categories.map((category) => (
             <Badge

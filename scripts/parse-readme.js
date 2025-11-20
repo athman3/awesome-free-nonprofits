@@ -17,6 +17,32 @@ const __dirname = path.dirname(__filename);
 
 const README_PATH = path.join(__dirname, '..', 'README.md');
 const OUTPUT_PATH = path.join(__dirname, '..', 'app', 'src', 'data', 'services.json');
+const LOGOS_DIR = path.join(__dirname, '..', 'app', 'public', 'logos');
+
+/**
+ * Sanitize service name to create logo filename
+ * Converts "Service Name" to "service-name.png"
+ */
+function sanitizeLogoFilename(name) {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+/**
+ * Get logo path for a service if logo file exists
+ */
+function getLogoPath(serviceName) {
+  const filename = `${sanitizeLogoFilename(serviceName)}.png`;
+  const logoPath = path.join(LOGOS_DIR, filename);
+  
+  if (fs.existsSync(logoPath)) {
+    return `/logos/${filename}`;
+  }
+  
+  return null;
+}
 
 /**
  * Parse the README.md file and extract services
@@ -125,6 +151,13 @@ function parseReadme() {
           }
           // Update score if the new one is higher or explicitly set (optional logic, here we just take the latest found)
           existingService.score = score;
+          // Add logo path if not already set and logo file exists
+          if (!existingService.logo) {
+            const logoPath = getLogoPath(serviceName);
+            if (logoPath) {
+              existingService.logo = logoPath;
+            }
+          }
         } else {
           // Create new service entry
           const newService = {
@@ -141,6 +174,12 @@ function parseReadme() {
           }
           if (offer) {
             newService.offer = offer;
+          }
+          
+          // Add logo path if logo file exists
+          const logoPath = getLogoPath(serviceName);
+          if (logoPath) {
+            newService.logo = logoPath;
           }
           
           services.push(newService);

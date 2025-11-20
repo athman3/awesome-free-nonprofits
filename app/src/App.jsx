@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react'
-import { Github } from 'lucide-react'
+import { Github, Mail } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 import { ThemeProvider } from '@/components/ThemeProvider'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { ServiceCard } from '@/components/ServiceCard'
@@ -146,30 +147,55 @@ function App() {
         </main>
 
         {/* Footer */}
-        <footer className="border-t mt-16 py-8">
-          <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-            <p>
-              🇩🇿 Built by{' '}
-              <a
-                href="https://github.com/ATHman3"
-                className="text-green-600 hover:text-green-500 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ATHman3
-              </a>
-            </p>
-            <p className="mt-2">
-              Want to contribute?{' '}
-              <a
-                href="https://github.com/athman3/awesome-free-nonprofits"
-                className="text-primary hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Add a service on GitHub
-              </a>
-            </p>
+        <footer className="border-t bg-muted/30 mt-auto">
+          <div className="container mx-auto px-4 py-4">
+            <div className="flex flex-col items-center text-center space-y-8">
+              {/* CTA Section */}
+              <div className="space-y-4 max-w-xl mx-auto">
+                <h3 className="text-2xl font-semibold tracking-tight">Grow the collection</h3>
+                <p className="text-muted-foreground">
+                  Help other nonprofits by adding free resources you use and love. 
+                  Your contributions make this list better for everyone.
+                </p>
+                <div className="flex flex-wrap justify-center gap-4 pt-2">
+                  <Button variant="default" asChild>
+                    <a
+                      href="https://github.com/athman3/awesome-free-nonprofits"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="gap-2"
+                    >
+                      <Github className="h-4 w-4" />
+                      Contribute on GitHub
+                    </a>
+                  </Button>
+                  <Button variant="outline" asChild>
+                    <a
+                      href="mailto:contact@athman3.com?subject=Request%20Addition%20or%20Report%20Error"
+                      className="gap-2"
+                    >
+                      <Mail className="h-4 w-4" />
+                      contact@athman3.com
+                    </a>
+                  </Button>
+                </div>
+              </div>
+
+              {/* Bottom Section */}
+              <div className="flex flex-col md:flex-row justify-center items-center gap-4 w-full max-w-4xl text-base text-muted-foreground">
+                <div>
+                  🇩🇿 Built by{' '}
+                  <a
+                    href="https://github.com/ATHman3"
+                    className="font-medium text-green-600 hover:text-green-500 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    ATHman3
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </footer>
       </div>
