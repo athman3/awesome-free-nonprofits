@@ -18,8 +18,8 @@ import { Button } from "@/components/ui/button"
 export function ServiceCard({ service, onCategoryClick }) {
   return (
     <Card className="h-full min-h-[450px] flex flex-col transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-      <CardHeader className="pb-6">
-        <CardTitle className="text-2xl mb-4">
+      <CardHeader className="pb-4">
+        <CardTitle className="text-2xl mb-2">
           <span className="truncate">{service.name}</span>
         </CardTitle>
         <div className="flex flex-wrap gap-2 mt-3">
@@ -35,11 +35,11 @@ export function ServiceCard({ service, onCategoryClick }) {
           ))}
         </div>
       </CardHeader>
-      <CardContent className="flex-1 flex flex-col pt-4">
+      <CardContent className="flex-1 flex flex-col">
         {service.about && (
-          <div className="mb-4">
+          <div className="mb-1">
             <h4 className="font-semibold text-base tracking-wide text-foreground mb-2">
-              About {service.name}
+              About 
             </h4>
             <CardDescription className="text-base leading-relaxed mb-4">
               {service.about}
