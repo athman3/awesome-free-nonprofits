@@ -1,0 +1,8 @@
+{
+  "watch": ["README.md", "scripts/parse-readme.js"],
+  "ext": "md,js",
+  "ignore": ["app/src/data/services.json", "app/dist/**", "node_modules/**"],
+  "exec": "npm run parse",
+  "delay": 500
+}
+

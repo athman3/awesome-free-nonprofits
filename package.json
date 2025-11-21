@@ -5,9 +5,14 @@
   "type": "module",
   "scripts": {
     "parse": "node scripts/parse-readme.js",
-    "dev": "npm run parse && cd app && npm run dev",
+    "parse:watch": "nodemon",
+    "dev": "npm run parse && concurrently \"npm run parse:watch\" \"cd app && npm run dev\"",
     "build": "npm run parse && cd app && npm run build",
     "preview": "cd app && npm run preview"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "nodemon": "^3.1.0"
   },
   "repository": {
     "type": "git",
