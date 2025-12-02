@@ -27,6 +27,8 @@
     "tools"
   ],
   "author": "athman3",
-  "license": "CC0-1.0"
+  "license": "CC0-1.0",
+  "dependencies": {
+    "tailwindcss-animate": "^1.0.7"
+  }
 }
-

@@ -11,10 +11,14 @@ import { Badge } from "@/components/ui/badge"
  */
 export function CategoryFilter({ categories, selectedCategory, onCategorySelect }) {
   return (
-    <div className="flex flex-wrap gap-3 justify-center">
+    <div className="flex flex-wrap gap-2 justify-center">
       <Badge
         variant={selectedCategory === "all" ? "default" : "outline"}
-        className="cursor-pointer transition-all text-sm px-4 py-2 hover:scale-[1.02]"
+        className={`cursor-pointer transition-all text-sm px-5 py-2.5 rounded-full hover:scale-[1.02] ${
+          selectedCategory === "all" 
+            ? "bg-primary hover:bg-primary/90 text-primary-foreground shadow-md shadow-primary/20 border-transparent" 
+            : "bg-white/60 dark:bg-zinc-900/60 backdrop-blur-sm hover:bg-white dark:hover:bg-zinc-900"
+        }`}
         onClick={() => onCategorySelect("all")}
       >
         All Services
@@ -23,7 +27,11 @@ export function CategoryFilter({ categories, selectedCategory, onCategorySelect 
         <Badge
           key={category}
           variant={selectedCategory === category ? "default" : "outline"}
-          className="cursor-pointer transition-all text-sm px-4 py-2 hover:scale-[1.02]"
+          className={`cursor-pointer transition-all text-sm px-5 py-2.5 rounded-full hover:scale-[1.02] ${
+            selectedCategory === category
+              ? "bg-primary hover:bg-primary/90 text-primary-foreground shadow-md shadow-primary/20 border-transparent"
+              : "bg-white/60 dark:bg-zinc-900/60 backdrop-blur-sm hover:bg-white dark:hover:bg-zinc-900"
+          }`}
           onClick={() => onCategorySelect(category)}
         >
           {category}
@@ -32,4 +40,3 @@ export function CategoryFilter({ categories, selectedCategory, onCategorySelect 
     </div>
   )
 }
-

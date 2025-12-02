@@ -29,18 +29,26 @@ Nonprofits often work with limited budgets, but many companies offer free or hea
 
 ## Communication & Collaboration
 
+- [Atlassian](https://www.atlassian.com/software/views/community-license-request) - Confluence for team wikis and documentation, Trello for visual collaboration. Free Cloud products (Confluence, Trello) for team knowledge sharing and collaboration. <!-- score: 80 -->
+- [Google](https://www.google.com/nonprofits/) - Google Workspace for team collaboration with Gmail, Meet, Chat, and Drive. Free Google Workspace for nonprofits with custom email, video conferencing, and cloud storage. <!-- score: 100 -->
+- [Microsoft](https://www.microsoft.com/en-us/nonprofits/) - Microsoft Teams for team communication with chat, video meetings, and file sharing integrated with Microsoft 365. Free Teams included with Microsoft 365 nonprofit licenses. <!-- score: 98 -->
 - [Slack](https://slack.com/pricing) - Team communication platform that organizes conversations into channels with direct messaging and video calls. Up to 85% discount on Pro, Business+, and Enterprise Grid plans for 501(c)(3) nonprofits. <!-- score: 92 -->
 - [Zoom](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0080298) - Video conferencing platform for hosting virtual meetings, webinars, and events. Discounted licenses for nonprofits under $10M budget with HD video, recording, and AI features. <!-- score: 88 -->
 
 ## Marketing & CRM
 
+- [Canva](https://www.canva.com/canva-for-nonprofits/) - Design platform for creating marketing materials, social media posts, and fundraising campaigns. Free Canva Pro with premium templates, brand kit, and content planner for marketing. <!-- score: 99 -->
 - [Google](https://www.google.com/nonprofits/) - Comprehensive suite of tools including Workspace, Ad Grants, and Cloud Platform. Free Workspace, $10,000/month Ad Grants, YouTube Nonprofit Program, and Cloud credits. <!-- score: 100 -->
 - [HubSpot](https://www.hubspot.com/nonprofits) - CRM platform combining marketing, sales, and service software with automation and analytics. 40-90% discount on marketing, sales, and service platforms with CRM and automation tools. <!-- score: 75 -->
+- [LinkedIn](https://nonprofit.linkedin.com/) - Professional network for nonprofit marketing, fundraising campaigns, and supporter engagement. Discounted marketing solutions and Sales Navigator for donor prospecting and outreach. <!-- score: 60 -->
 - [Mailchimp](https://mailchimp.com/help/about-nonprofit-discount/) - Email marketing platform for creating and sending newsletters and campaigns. Free plan for up to 500 contacts and 1,000 monthly emails with templates and automation. <!-- score: 72 -->
+- [Notion](https://www.notion.so/nonprofits) - All-in-one workspace with templates for donor management, fundraising tracking, and board management. 50% off Plus Plan with nonprofit-specific templates for CRM and fundraising. <!-- score: 90 -->
 - [Salesforce](https://www.salesforce.org/nonprofit/) - Cloud-based CRM platform for donor management, fundraising tracking, and program management. 10 free Enterprise Edition licenses with Nonprofit Success Pack and discounts on additional licenses. <!-- score: 87 -->
 
 ## Productivity & Analytics
 
+- [Google](https://www.google.com/nonprofits/) - Google Workspace productivity suite with Docs, Sheets, Slides, and Drive for document collaboration. Free Google Workspace with unlimited cloud storage and real-time collaboration. <!-- score: 100 -->
+- [Microsoft](https://www.microsoft.com/en-us/nonprofits/) - Microsoft 365 productivity suite with Word, Excel, PowerPoint, and OneDrive. Free and 75% discounted Microsoft 365 Business Premium licenses for eligible nonprofits. <!-- score: 98 -->
 - [Asana](https://asana.com/nonprofit) - Project and task management platform for organizing work and tracking programs. 50% discount on Premium, Business, and Enterprise plans with timelines and automation. <!-- score: 78 -->
 - [Atlassian](https://www.atlassian.com/software/views/community-license-request) - Suite of collaboration and development tools including Jira, Confluence, and Trello. Free Cloud products (Jira, Confluence, Trello, Bitbucket) for up to 50 users. <!-- score: 80 -->
 - [Monday.com](https://monday.com/nonprofits) - Visual work operating system for managing projects and workflows. Discounts on paid plans with customizable boards, automation, and 200+ integrations. <!-- score: 78 -->
