@@ -70,13 +70,14 @@ function getLogoPath(serviceName) {
 
 /**
  * Generate slug for category (for TOC links)
- * GitHub removes & and keeps the double dash
+ * GitHub removes "&" completely, then converts spaces to single dashes
+ * e.g., "Infrastructure & Security" → "infrastructure  security" → "infrastructure--security"
  */
 function categoryToSlug(category) {
   return category
     .toLowerCase()
-    .replace(/&/g, '')
-    .replace(/\s+/g, '-');
+    .replace(/&/g, '')           // Remove & (leaves double space)
+    .replace(/ /g, '-');         // Each space becomes a dash (preserves double dash)
 }
 
 /**

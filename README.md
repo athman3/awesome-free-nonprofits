@@ -4,12 +4,12 @@ Nonprofits often work with limited budgets, but many companies offer free or hea
 
 ## Contents
 
-- [Infrastructure & Security](#infrastructure-security)
-- [Design & Creative](#design-creative)
-- [Communication & Collaboration](#communication-collaboration)
-- [Marketing & CRM](#marketing-crm)
-- [Productivity & Analytics](#productivity-analytics)
-- [Business & Operations](#business-operations)
+- [Infrastructure & Security](#infrastructure--security)
+- [Design & Creative](#design--creative)
+- [Communication & Collaboration](#communication--collaboration)
+- [Marketing & CRM](#marketing--crm)
+- [Productivity & Analytics](#productivity--analytics)
+- [Business & Operations](#business--operations)
 - [Eligibility](#eligibility)
 
 ## Infrastructure & Security
@@ -29,7 +29,7 @@ Nonprofits often work with limited budgets, but many companies offer free or hea
 ## Communication & Collaboration
 
 - [Atlassian](https://www.atlassian.com/software/views/community-license-request) - Team collaboration tools including Confluence, Jira, and Trello.
-- [Google](https://www.google.com/nonprofits/) - Google Workspace for team collaboration with Gmail, Meet, Chat, and Drive.
+- [Google](https://www.google.com/nonprofits/) - Productivity and collaboration suite with email, video meetings, chat, and cloud storage.
 - [Slack](https://slack.com/pricing) - Team communication platform with channels, direct messaging, and video calls.
 - [Zoom](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0080298) - Video conferencing platform for virtual meetings, webinars, and events.
 
