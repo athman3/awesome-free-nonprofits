@@ -31,8 +31,8 @@ jobs:
       - name: Install root dependencies
         run: npm install
 
-      - name: Parse README to generate services.json
-        run: npm run parse
+      - name: Generate README and services.json
+        run: npm run generate
 
       - name: Install app dependencies
         run: |

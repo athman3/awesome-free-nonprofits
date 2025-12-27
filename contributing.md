@@ -14,78 +14,103 @@ If you have a free service or resource for nonprofits that you'd like to add to 
 - Provide a brief, clear description of what's offered
 - Ensure the service is currently active and available
 
-### Submission Process
+### How This Project Works
 
-If you have something awesome to contribute to this list, this is how you do it.
+This project uses a **single source of truth**: `scripts/services.json`. The README.md and the web application are both **automatically generated** from this JSON file.
+
+```
+scripts/services.json  →  generate.js  →  README.md
+                                      →  app/src/data/services.json
+```
+
+### Submission Process
 
 You'll need a [GitHub account](https://github.com/join)!
 
 1. Access this repository's GitHub page: https://github.com/athman3/awesome-free-nonprofits
-2. Click on the `README.md` file
-3. Now click on the edit icon
-4. You can start editing the text of the file in the in-browser editor. Make sure you follow the guidelines below. You can use [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/).
+2. Navigate to `scripts/services.json`
+3. Click on the edit icon
+4. Add your service entry following the format below
 5. Say why you're proposing the changes, and then click on "Propose file change"
 6. Submit the [pull request](https://help.github.com/articles/using-pull-requests/)!
 
 ### Format Requirements
 
-When adding a service, use the awesome list standard format:
+Add your service to `scripts/services.json` with the following structure:
 
-```markdown
-- [Service Name](https://link-to-nonprofit-program) - Description.
+```json
+{
+  "Service Name": {
+    "url": "https://link-to-nonprofit-program",
+    "about": "Short objective description of what the service is.",
+    "offer": "Detailed description of what's available for nonprofits.",
+    "score": 80,
+    "categories": ["Category Name"]
+  }
+}
 ```
 
-The description should:
-- Start with an uppercase character
-- End with a period
-- Be concise but informative
-- Use factual, objective language (no promotional content)
+**Fields:**
+- **`url`**: Direct link to the nonprofit program page
+- **`about`**: One concise sentence describing what the service IS (not what it offers). Starts with uppercase, ends with period.
+- **`offer`**: Detailed description of the nonprofit program benefits
+- **`score`** (1-100): How valuable/comprehensive the nonprofit offering is
+- **`categories`**: Array of categories the service belongs to
 
-- Find the appropriate category or create a new one if needed
-- Add your service in alphabetical order within the category
-- Update the Table of Contents if you added a new category
+**Available Categories:**
+- Infrastructure & Security
+- Design & Creative
+- Communication & Collaboration
+- Marketing & CRM
+- Productivity & Analytics
+- Education & Training
+- Business & Operations
 
-### How the Parser Extracts "About" and "Offer"
+**Example:**
 
-The web application automatically parses your description to extract two parts: **About** (what the service is) and **Offer** (what's available for nonprofits). Here's how it works:
-
-**Structure your description with multiple sentences:**
-
-1. **First sentence** = "About" section
-   - Describes what the service/company is
-   - Should be a brief, general description
-   - Example: "Cloud computing platform offering over 200 services including compute, storage, databases, machine learning, and analytics."
-
-2. **Remaining sentences** = "Offer" section
-   - Describes what's specifically offered for nonprofits
-   - Should include details about the nonprofit program, features, and benefits
-   - Example: "Comprehensive cloud computing program for eligible nonprofits providing promotional credits for AWS services. Access to compute, storage, databases, machine learning, analytics, IoT, and 200+ AWS services..."
-
-**Important:**
-- Use periods (`.`) to separate sentences - the parser splits on `. ` (period followed by space)
-- If you only provide one sentence, it will be used for both "About" and "Offer"
-- For best results, always include at least 2 sentences: one describing the service, and one or more describing the nonprofit offer
-
-**Example of proper structure:**
-
-```markdown
-- [AWS for Nonprofits](url) - Cloud computing platform offering over 200 services including compute, storage, databases, machine learning, and analytics. Comprehensive cloud computing program for eligible nonprofits providing promotional credits for AWS services. Access to compute, storage, databases, machine learning, analytics, IoT, and 200+ AWS services. Credits can be used for website hosting, data analysis, application development, backup solutions, and scaling operations.
+```json
+{
+  "Slack": {
+    "url": "https://slack.com/pricing",
+    "about": "Team communication platform with channels, direct messaging, and video calls.",
+    "offer": "Up to 85% discount on Pro, Business+, and Enterprise Grid plans for 501(c)(3) nonprofits.",
+    "score": 92,
+    "categories": ["Communication & Collaboration"]
+  }
+}
 ```
 
-This will be parsed as:
-- **About:** "Cloud computing platform offering over 200 services including compute, storage, databases, machine learning, and analytics."
-- **Offer:** "Comprehensive cloud computing program for eligible nonprofits providing promotional credits for AWS services. Access to compute, storage, databases, machine learning, analytics, IoT, and 200+ AWS services. Credits can be used for website hosting, data analysis, application development, backup solutions, and scaling operations."
+**Guidelines for `about` field (becomes README description):**
+- ✅ `"Team communication platform with channels, direct messaging, and video calls."`
+- ✅ `"Online design platform for creating graphics and marketing materials."`
+- ❌ `"Up to 85% discount on Pro plans for nonprofits."` (describes offer, not what it is)
+- ❌ `"Free Canva Pro with unlimited templates."` (describes offer, not what it is)
 
 ### Quality Standards
 
 - Links must be direct and working (link to the nonprofit program page, not the main website)
-- No promotional language - be factual and objective
+- No promotional language in `about` - be factual and objective
 - Check for duplicates before submitting
 - Verify the service is still active and available
+- Services should be alphabetically ordered by name in the JSON file
+
+## For Developers
+
+To regenerate README.md and app data after editing `scripts/services.json`:
+
+```bash
+npm run generate
+```
+
+Or use watch mode during development:
+
+```bash
+npm run dev
+```
 
 ## Updating Your Pull Request
 
-Sometimes, a maintainer will ask you to edit your Pull Request before it is included. This is normally due to spelling errors or because your PR didn't match the awesome list guidelines.
+Sometimes, a maintainer will ask you to edit your Pull Request before it is included. This is normally due to spelling errors or because your PR didn't match the guidelines.
 
 [Here](https://github.com/RichardLitt/knowledge/blob/master/github/amending-a-commit-guide.md) is a write up on how to change a Pull Request and the different ways you can do that.
 

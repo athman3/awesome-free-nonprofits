@@ -4,15 +4,10 @@
   "description": "A curated list of awesome free services and resources for nonprofit organizations",
   "type": "module",
   "scripts": {
-    "parse": "node scripts/parse-readme.js",
-    "parse:watch": "nodemon",
-    "dev": "npm run parse && concurrently \"npm run parse:watch\" \"cd app && npm run dev\"",
-    "build": "npm run parse && cd app && npm run build",
+    "generate": "node scripts/generate.js",
+    "dev": "npm run generate && cd app && npm run dev",
+    "build": "npm run generate && cd app && npm run build",
     "preview": "cd app && npm run preview"
-  },
-  "devDependencies": {
-    "concurrently": "^9.1.0",
-    "nodemon": "^3.1.0"
   },
   "repository": {
     "type": "git",
@@ -27,8 +22,5 @@
     "tools"
   ],
   "author": "athman3",
-  "license": "CC0-1.0",
-  "dependencies": {
-    "tailwindcss-animate": "^1.0.7"
-  }
+  "license": "CC0-1.0"
 }

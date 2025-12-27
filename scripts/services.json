@@ -1,0 +1,191 @@
+{
+  "1Password": {
+    "url": "https://1password.com/for-non-profits/",
+    "about": "Password manager and secrets management platform.",
+    "offer": "One-time credit or discounted accounts available depending on eligibility.",
+    "score": 80,
+    "categories": ["Infrastructure & Security"]
+  },
+  "AWS": {
+    "url": "https://aws.amazon.com/government-education/nonprofits/",
+    "about": "Cloud computing platform offering over 200 services for compute, storage, and databases.",
+    "offer": "Promotional credits for compute, storage, databases, machine learning, and training resources.",
+    "score": 70,
+    "categories": ["Infrastructure & Security"]
+  },
+  "Microsoft": {
+    "url": "https://www.microsoft.com/en-us/nonprofits/",
+    "about": "Comprehensive suite of productivity, collaboration, and cloud services.",
+    "offer": "Free and discounted products including Azure ($3,500 annual credits), Microsoft 365, Dynamics 365, and Power Platform.",
+    "score": 98,
+    "categories": ["Infrastructure & Security", "Communication & Collaboration", "Productivity & Analytics"]
+  },
+  "Norton": {
+    "url": "https://www.techsoup.org/norton",
+    "about": "Cybersecurity software providing antivirus protection, firewall, and VPN.",
+    "offer": "Deeply discounted Norton 360 and security products through TechSoup.",
+    "score": 65,
+    "categories": ["Infrastructure & Security"]
+  },
+  "Webflow": {
+    "url": "https://help.webflow.com/hc/en-us/articles/33961230168467-Nonprofit-Organization-NPO-discount",
+    "about": "Professional website builder and CMS for creating custom websites without coding.",
+    "offer": "50% discount on Basic, CMS, or Business site plans for 12 months.",
+    "score": 84,
+    "categories": ["Infrastructure & Security"]
+  },
+  "Wix": {
+    "url": "https://support.wix.com/en/article/premium-plan-discount-for-charities-or-non-profit-organizations",
+    "about": "Drag-and-drop website builder with designer templates.",
+    "offer": "70% discount on 2-year Premium plan through TechSoup with free 1-year domain voucher.",
+    "score": 60,
+    "categories": ["Infrastructure & Security"]
+  },
+  "Adobe": {
+    "url": "https://www.adobe.com/es/nonprofits.html",
+    "about": "Professional creative software including Photoshop, Illustrator, and Premiere Pro.",
+    "offer": "Free Adobe Express Premium, discounted Acrobat Pro, and discounted Creative Cloud subscriptions.",
+    "score": 70,
+    "categories": ["Design & Creative"]
+  },
+  "Canva": {
+    "url": "https://www.canva.com/canva-for-nonprofits/",
+    "about": "Online design platform for creating graphics, presentations, and marketing materials.",
+    "offer": "Free Canva Pro with unlimited premium templates, stock photos, brand kit, and team collaboration.",
+    "score": 99,
+    "categories": ["Design & Creative", "Marketing & CRM"]
+  },
+  "Atlassian": {
+    "url": "https://www.atlassian.com/software/views/community-license-request",
+    "about": "Team collaboration tools including Confluence, Jira, and Trello.",
+    "offer": "Free Cloud products (Jira, Confluence, Trello, Bitbucket) for up to 50 users.",
+    "score": 80,
+    "categories": ["Communication & Collaboration", "Productivity & Analytics"]
+  },
+  "Google": {
+    "url": "https://www.google.com/nonprofits/",
+    "about": "Google Workspace for team collaboration with Gmail, Meet, Chat, and Drive.",
+    "offer": "Free Google Workspace, $10,000/month Ad Grants, YouTube Nonprofit Program, and Cloud credits.",
+    "score": 100,
+    "categories": ["Communication & Collaboration", "Marketing & CRM", "Productivity & Analytics"]
+  },
+  "Slack": {
+    "url": "https://slack.com/pricing",
+    "about": "Team communication platform with channels, direct messaging, and video calls.",
+    "offer": "Up to 85% discount on Pro, Business+, and Enterprise Grid plans for 501(c)(3) nonprofits.",
+    "score": 92,
+    "categories": ["Communication & Collaboration"]
+  },
+  "Zoom": {
+    "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0080298",
+    "about": "Video conferencing platform for virtual meetings, webinars, and events.",
+    "offer": "Discounted licenses for nonprofits under $10M budget with HD video, recording, and AI features.",
+    "score": 88,
+    "categories": ["Communication & Collaboration"]
+  },
+  "HubSpot": {
+    "url": "https://www.hubspot.com/nonprofits",
+    "about": "CRM platform combining marketing, sales, and service software.",
+    "offer": "40-90% discount on marketing, sales, and service platforms with CRM and automation tools.",
+    "score": 75,
+    "categories": ["Marketing & CRM"]
+  },
+  "LinkedIn": {
+    "url": "https://nonprofit.linkedin.com/",
+    "about": "Professional network for marketing, fundraising, and supporter engagement.",
+    "offer": "Discounted LinkedIn Learning, Recruiter, Sales Navigator, and marketing solutions.",
+    "score": 60,
+    "categories": ["Marketing & CRM", "Education & Training"]
+  },
+  "Mailchimp": {
+    "url": "https://mailchimp.com/help/about-nonprofit-discount/",
+    "about": "Email marketing platform for newsletters and campaigns.",
+    "offer": "Free plan for up to 500 contacts and 1,000 monthly emails with templates and automation.",
+    "score": 72,
+    "categories": ["Marketing & CRM"]
+  },
+  "Notion": {
+    "url": "https://www.notion.so/nonprofits",
+    "about": "All-in-one workspace for donor management, fundraising tracking, and documentation.",
+    "offer": "Free Team Plan with unlimited blocks, real-time collaboration, and advanced permissions.",
+    "score": 90,
+    "categories": ["Marketing & CRM", "Productivity & Analytics"]
+  },
+  "Salesforce": {
+    "url": "https://www.salesforce.org/nonprofit/",
+    "about": "Cloud-based CRM platform for donor management and fundraising.",
+    "offer": "10 free Enterprise Edition licenses with Nonprofit Success Pack and discounts on additional licenses.",
+    "score": 87,
+    "categories": ["Marketing & CRM"]
+  },
+  "Asana": {
+    "url": "https://asana.com/nonprofit",
+    "about": "Project and task management platform for organizing work.",
+    "offer": "50% discount on Premium, Business, and Enterprise plans with timelines and automation.",
+    "score": 78,
+    "categories": ["Productivity & Analytics"]
+  },
+  "GitHub": {
+    "url": "https://github.com/solutions/industry/nonprofits",
+    "about": "Code hosting platform with repositories, code review, and issue tracking.",
+    "offer": "Free GitHub Team with unlimited private repositories, Actions, and security features.",
+    "score": 86,
+    "categories": ["Productivity & Analytics"]
+  },
+  "GitLab": {
+    "url": "https://about.gitlab.com/solutions/education/",
+    "about": "Complete DevOps platform with Git repository management and CI/CD pipelines.",
+    "offer": "Free GitLab Ultimate for qualifying educational and open source projects including nonprofits.",
+    "score": 85,
+    "categories": ["Productivity & Analytics"]
+  },
+  "Monday.com": {
+    "url": "https://monday.com/nonprofits",
+    "about": "Visual work operating system for managing projects and workflows.",
+    "offer": "Discounts on paid plans with customizable boards, automation, and 200+ integrations.",
+    "score": 78,
+    "categories": ["Productivity & Analytics"]
+  },
+  "Tableau": {
+    "url": "https://www.tableau.com/foundation",
+    "about": "Professional data visualization and business intelligence platform.",
+    "offer": "Free and discounted licenses through Tableau Foundation for data visualization and dashboards.",
+    "score": 65,
+    "categories": ["Productivity & Analytics"]
+  },
+  "Trello": {
+    "url": "https://trello.com/use-cases/nonprofits",
+    "about": "Visual collaboration tool using boards, lists, and cards.",
+    "offer": "Free plan with unlimited cards plus up to 75% discount on paid plans with automation.",
+    "score": 75,
+    "categories": ["Productivity & Analytics"]
+  },
+  "DocuSign": {
+    "url": "https://ecom.docusign.com/nonprofit/plans/esignature",
+    "about": "Digital signature platform for electronic signatures and contract management.",
+    "offer": "Up to 61% discount on annual eSignature plans with templates and 900+ integrations.",
+    "score": 60,
+    "categories": ["Business & Operations"]
+  },
+  "PayPal": {
+    "url": "https://www.paypal.com/charities",
+    "about": "Digital payment platform for accepting donations and processing payments.",
+    "offer": "Discounted transaction rates for 501(c)(3) charities with donation buttons and recurring donations.",
+    "score": 82,
+    "categories": ["Business & Operations"]
+  },
+  "Stripe": {
+    "url": "https://stripe.com/en-es/industries/nonprofits",
+    "about": "Online payment infrastructure for accepting donations and managing subscriptions.",
+    "offer": "Discounted payment processing for 501(c)(3) nonprofits with recurring donations and fraud prevention.",
+    "score": 83,
+    "categories": ["Business & Operations"]
+  },
+  "TechSoup": {
+    "url": "https://www.techsoup.org/",
+    "about": "Technology marketplace providing donated and discounted products from major partners.",
+    "offer": "Donated and discounted products from 100+ partners including Microsoft, Adobe, Cisco, and AWS.",
+    "score": 95,
+    "categories": ["Business & Operations"]
+  }
+}
