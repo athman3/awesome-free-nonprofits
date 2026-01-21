@@ -44,6 +44,7 @@ Nonprofits often work with limited budgets, but many companies offer free or hea
 ## Productivity & Analytics
 
 - [Asana](https://asana.com/nonprofit) - Project and task management platform for organizing work.
+- [Claude](https://claude.com/solutions/nonprofits) - AI assistant for writing, analysis, coding, and research tasks.
 - [GitHub](https://github.com/solutions/industry/nonprofits) - Code hosting platform with repositories, code review, and issue tracking.
 - [GitLab](https://about.gitlab.com/solutions/education/) - Complete DevOps platform with Git repository management and CI/CD pipelines.
 - [Monday.com](https://monday.com/nonprofits) - Visual work operating system for managing projects and workflows.

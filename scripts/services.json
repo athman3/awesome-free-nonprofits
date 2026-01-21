@@ -45,7 +45,7 @@
     "url": "https://www.adobe.com/es/nonprofits.html",
     "about": "Professional creative software including Photoshop, Illustrator, and Premiere Pro.",
     "offer": "Free Adobe Express Premium, discounted Acrobat Pro, and discounted Creative Cloud subscriptions.",
-    "score": 70,
+    "score": 88,
     "categories": ["Design & Creative"]
   },
   "Canva": {
@@ -54,6 +54,13 @@
     "offer": "Free Canva Pro with unlimited premium templates, stock photos, brand kit, and team collaboration.",
     "score": 99,
     "categories": ["Design & Creative", "Marketing & CRM"]
+  },
+  "Claude": {
+    "url": "https://claude.com/solutions/nonprofits",
+    "about": "AI assistant for writing, analysis, coding, and research tasks.",
+    "offer": "Discounted Team plan at $8/user/month with nonprofit connectors (Blackbaud, Benevity, Candid), SSO, and free AI Fluency training course.",
+    "score": 92,
+    "categories": ["Productivity & Analytics", "Communication & Collaboration"]
   },
   "Atlassian": {
     "url": "https://www.atlassian.com/software/views/community-license-request",
