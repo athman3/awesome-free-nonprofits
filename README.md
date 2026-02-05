@@ -9,6 +9,7 @@ Nonprofits often work with limited budgets, but many companies offer free or hea
 - [Communication & Collaboration](#communication--collaboration)
 - [Marketing & CRM](#marketing--crm)
 - [Productivity & Analytics](#productivity--analytics)
+- [Education & Training](#education--training)
 - [Business & Operations](#business--operations)
 - [Eligibility](#eligibility)
 
@@ -50,6 +51,10 @@ Nonprofits often work with limited budgets, but many companies offer free or hea
 - [Monday.com](https://monday.com/nonprofits) - Visual work operating system for managing projects and workflows.
 - [Tableau](https://www.tableau.com/foundation) - Professional data visualization and business intelligence platform.
 - [Trello](https://trello.com/use-cases/nonprofits) - Visual collaboration tool using boards, lists, and cards.
+
+## Education & Training
+
+- [Kahoot!](https://kahoot.com/register/pricing-nonprofit/) - Interactive learning and engagement platform for quizzes, presentations, training, and events.
 
 ## Business & Operations
 

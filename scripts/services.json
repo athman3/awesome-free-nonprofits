@@ -97,6 +97,13 @@
     "score": 75,
     "categories": ["Marketing & CRM"]
   },
+  "Kahoot!": {
+    "url": "https://kahoot.com/register/pricing-nonprofit/",
+    "about": "Interactive learning and engagement platform for quizzes, presentations, training, and events.",
+    "offer": "50% discount on all Kahoot! 360 plans for presentations, training courses, and team engagement.",
+    "score": 65,
+    "categories": ["Education & Training", "Communication & Collaboration"]
+  },
   "LinkedIn": {
     "url": "https://nonprofit.linkedin.com/",
     "about": "Professional network for marketing, fundraising, and supporter engagement.",
