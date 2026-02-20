@@ -1,0 +1,67 @@
+name: Weekly Nonprofit Offers Check
+
+on:
+  schedule:
+    # Every Monday at 09:00 UTC
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-offers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run URL availability check
+        id: check
+        run: |
+          set +e
+          node scripts/check-offers.js 2>&1 | tee /tmp/check-output.txt
+          echo "exit_code=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+
+      - name: Create issue if URLs are broken
+        if: steps.check.outputs.exit_code != '0'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const output = fs.readFileSync('/tmp/check-output.txt', 'utf8');
+
+            const today = new Date().toISOString().slice(0, 10);
+            const title = `[Weekly Check] Broken nonprofit service URLs detected – ${today}`;
+
+            // Check for an existing open issue for this specific week to avoid duplicates
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'weekly-check',
+            });
+
+            const alreadyOpen = issues.some(i => i.title === title);
+            if (alreadyOpen) {
+              console.log('An open issue for this week already exists – skipping creation.');
+              return;
+            }
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body: `## Weekly Nonprofit Offers Check – ${today}\n\nThe automated weekly URL check found unreachable service links.\n\nPlease review the affected entries in \`scripts/services.json\` and update any outdated URLs or offers.\n\n<details>\n<summary>Full check output</summary>\n\n\`\`\`\n${output}\n\`\`\`\n</details>`,
+              labels: ['weekly-check'],
+            });

@@ -4,6 +4,7 @@
   "description": "A curated list of awesome free services and resources for nonprofit organizations",
   "type": "module",
   "scripts": {
+    "check": "node scripts/check-offers.js",
     "generate": "node scripts/generate.js",
     "dev": "npm run generate && cd app && npm run dev",
     "build": "npm run generate && cd app && npm run build",
