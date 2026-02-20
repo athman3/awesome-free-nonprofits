@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "check": "node scripts/check-offers.js",
+    "discover": "node scripts/discover-offers.js",
     "generate": "node scripts/generate.js",
     "dev": "npm run generate && cd app && npm run dev",
     "build": "npm run generate && cd app && npm run build",

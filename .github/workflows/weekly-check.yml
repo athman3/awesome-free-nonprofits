@@ -28,6 +28,7 @@ jobs:
 
       - name: Run URL availability check
         id: check
+        shell: bash
         run: |
           set +e
           node scripts/check-offers.js 2>&1 | tee /tmp/check-output.txt
@@ -64,4 +65,45 @@ jobs:
               title,
               body: `## Weekly Nonprofit Offers Check – ${today}\n\nThe automated weekly URL check found unreachable service links.\n\nPlease review the affected entries in \`scripts/services.json\` and update any outdated URLs or offers.\n\n<details>\n<summary>Full check output</summary>\n\n\`\`\`\n${output}\n\`\`\`\n</details>`,
               labels: ['weekly-check'],
+            });
+
+      - name: Discover new nonprofit offers
+        id: discover
+        shell: bash
+        run: |
+          set +e
+          node scripts/discover-offers.js 2>&1 | tee /tmp/discover-output.txt
+          echo "exit_code=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+
+      - name: Create issue for new offers found
+        if: steps.discover.outputs.exit_code == '2'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const output = fs.readFileSync('/tmp/discover-output.txt', 'utf8');
+
+            const today = new Date().toISOString().slice(0, 10);
+            const title = `[Weekly Discovery] New nonprofit offers to review – ${today}`;
+
+            // Avoid duplicate issues for the same week
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'new-offers',
+            });
+
+            const alreadyOpen = issues.some(i => i.title === title);
+            if (alreadyOpen) {
+              console.log('A discovery issue for this week already exists – skipping creation.');
+              return;
+            }
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body: `## New Nonprofit Offers Found – ${today}\n\nThe automated weekly discovery found new potential nonprofit offers not yet listed in \`scripts/services.json\`.\n\nPlease review each entry below, verify the offer details on the provider's website, and add qualifying services to \`scripts/services.json\`.\n\n<details>\n<summary>Full discovery output</summary>\n\n\`\`\`\n${output}\n\`\`\`\n</details>`,
+              labels: ['new-offers'],
             });
