@@ -48,6 +48,7 @@ Nonprofits often work with limited budgets, but many companies offer free or hea
 - [Claude](https://claude.com/solutions/nonprofits) - AI assistant for writing, analysis, coding, and research tasks.
 - [GitHub](https://github.com/solutions/industry/nonprofits) - Code hosting platform with repositories, code review, and issue tracking.
 - [GitLab](https://about.gitlab.com/solutions/education/) - Complete DevOps platform with Git repository management and CI/CD pipelines.
+- [Make](https://www.make.com/en/ngo-program) - No-code visual automation platform for connecting apps and building workflows.
 - [Monday.com](https://monday.com/nonprofits) - Visual work operating system for managing projects and workflows.
 - [Tableau](https://www.tableau.com/foundation) - Professional data visualization and business intelligence platform.
 - [Trello](https://trello.com/use-cases/nonprofits) - Visual collaboration tool using boards, lists, and cards.

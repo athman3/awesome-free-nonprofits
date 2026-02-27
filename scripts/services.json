@@ -111,6 +111,13 @@
     "score": 60,
     "categories": ["Marketing & CRM", "Education & Training"]
   },
+  "Make": {
+    "url": "https://www.make.com/en/ngo-program",
+    "about": "No-code visual automation platform for connecting apps and building workflows.",
+    "offer": "Free Pro plan for 12 months with 40,000 operations per month for eligible NGOs, renewable on request.",
+    "score": 82,
+    "categories": ["Productivity & Analytics"]
+  },
   "Mailchimp": {
     "url": "https://mailchimp.com/help/about-nonprofit-discount/",
     "about": "Email marketing platform for newsletters and campaigns.",
