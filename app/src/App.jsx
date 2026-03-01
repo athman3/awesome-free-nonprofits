@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect, useCallback } from 'react'
 import { Github, Mail, SearchX } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { ThemeProvider } from '@/components/ThemeProvider'
@@ -10,8 +10,29 @@ import servicesData from '@/data/services.json'
 import awesomeLogo from '@/assets/awesome-logo-svg-vector.svg'
 
 function App() {
-  const [searchQuery, setSearchQuery] = useState('')
-  const [selectedCategory, setSelectedCategory] = useState('all')
+  // Read initial state from URL query parameters (supports ?q= and ?category=)
+  const urlParams = new URLSearchParams(window.location.search)
+  const initialQuery = urlParams.get('q') || ''
+  const initialCategory = urlParams.get('category') || 'all'
+
+  const [searchQuery, setSearchQuery] = useState(initialQuery)
+  const [selectedCategory, setSelectedCategory] = useState(initialCategory)
+
+  // Sync state changes back to URL params without page reload
+  const updateUrlParams = useCallback((query, category) => {
+    const params = new URLSearchParams()
+    if (query.trim()) params.set('q', query.trim())
+    if (category && category !== 'all') params.set('category', category)
+
+    const newUrl = params.toString()
+      ? `${window.location.pathname}?${params.toString()}`
+      : window.location.pathname
+    window.history.replaceState(null, '', newUrl)
+  }, [])
+
+  useEffect(() => {
+    updateUrlParams(searchQuery, selectedCategory)
+  }, [searchQuery, selectedCategory, updateUrlParams])
 
   // Handle search query change - reset category to 'all' when searching
   const handleSearchChange = (value) => {

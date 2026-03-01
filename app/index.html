@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="content-language" content="en" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="canonical" href="https://nonprofits.athman3.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#059669" />
 
         <!-- Primary Meta Tags -->
         <title>
@@ -47,23 +52,24 @@
             content="Awesome Free Nonprofits Preview"
         />
         <meta property="og:site_name" content="Awesome Free Nonprofits" />
+        <meta property="og:locale" content="en_US" />
 
         <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta
-            property="twitter:url"
+            name="twitter:url"
             content="https://nonprofits.athman3.com/"
         />
         <meta
-            property="twitter:title"
+            name="twitter:title"
             content="Awesome Free Nonprofits - Free Services & Resources for Nonprofits"
         />
         <meta
-            property="twitter:description"
+            name="twitter:description"
             content="A curated list of awesome free services, tools, and resources for nonprofit organizations. Discover cloud infrastructure, design tools, marketing resources, and more."
         />
         <meta
-            property="twitter:image"
+            name="twitter:image"
             content="https://nonprofits.athman3.com/og-image.png"
         />
 
@@ -90,37 +96,44 @@
                     {
                         "@type": "ListItem",
                         "position": 1,
-                        "name": "Infrastructure & Security"
+                        "name": "Infrastructure & Security",
+                        "url": "https://nonprofits.athman3.com/?category=Infrastructure+%26+Security"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
-                        "name": "Design & Creative"
+                        "name": "Design & Creative",
+                        "url": "https://nonprofits.athman3.com/?category=Design+%26+Creative"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
-                        "name": "Communication & Collaboration"
+                        "name": "Communication & Collaboration",
+                        "url": "https://nonprofits.athman3.com/?category=Communication+%26+Collaboration"
                     },
                     {
                         "@type": "ListItem",
                         "position": 4,
-                        "name": "Marketing & CRM"
+                        "name": "Marketing & CRM",
+                        "url": "https://nonprofits.athman3.com/?category=Marketing+%26+CRM"
                     },
                     {
                         "@type": "ListItem",
                         "position": 5,
-                        "name": "Productivity & Analytics"
+                        "name": "Productivity & Analytics",
+                        "url": "https://nonprofits.athman3.com/?category=Productivity+%26+Analytics"
                     },
                     {
                         "@type": "ListItem",
                         "position": 6,
-                        "name": "Education & Training"
+                        "name": "Education & Training",
+                        "url": "https://nonprofits.athman3.com/?category=Education+%26+Training"
                     },
                     {
                         "@type": "ListItem",
                         "position": 7,
-                        "name": "Business & Operations"
+                        "name": "Business & Operations",
+                        "url": "https://nonprofits.athman3.com/?category=Business+%26+Operations"
                     }
                 ]
             }
@@ -171,6 +184,13 @@
         </script>
     </head>
     <body>
+        <noscript>
+            <div style="padding: 2rem; text-align: center; font-family: system-ui, sans-serif;">
+                <h1>Awesome Free Nonprofits</h1>
+                <p>A curated list of free services, tools, and resources for nonprofit organizations. Please enable JavaScript to browse the full interactive directory.</p>
+                <p>Visit our <a href="https://github.com/athman3/awesome-free-nonprofits">GitHub repository</a> to see the full list.</p>
+            </div>
+        </noscript>
         <div id="root"></div>
         <script type="module" src="/src/main.jsx"></script>
     </body>
