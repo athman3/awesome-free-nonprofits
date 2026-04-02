@@ -42,7 +42,7 @@
     "categories": ["Infrastructure & Security"]
   },
   "Adobe": {
-    "url": "https://www.adobe.com/es/nonprofits.html",
+    "url": "https://www.adobe.com/nonprofits.html",
     "about": "Professional creative software including Photoshop, Illustrator, and Premiere Pro.",
     "offer": "Free Adobe Express Premium, discounted Acrobat Pro, and discounted Creative Cloud subscriptions.",
     "score": 88,
@@ -77,7 +77,7 @@
     "categories": ["Communication & Collaboration", "Marketing & CRM", "Productivity & Analytics"]
   },
   "Slack": {
-    "url": "https://slack.com/pricing",
+    "url": "https://slack.com/help/articles/204368833-Apply-for-the-Slack-for-Nonprofits-discount",
     "about": "Team communication platform with channels, direct messaging, and video calls.",
     "offer": "Up to 85% discount on Pro, Business+, and Enterprise Grid plans for 501(c)(3) nonprofits.",
     "score": 92,
@@ -103,6 +103,13 @@
     "offer": "50% discount on all Kahoot! 360 plans for presentations, training courses, and team engagement.",
     "score": 65,
     "categories": ["Education & Training", "Communication & Collaboration"]
+  },
+  "Thinkific": {
+    "url": "https://www.thinkific.com/non-profit/",
+    "about": "Online course platform for creating, marketing, and selling educational content.",
+    "offer": "50% discount on Start and Grow plans for registered 501(c)(3) nonprofits.",
+    "score": 75,
+    "categories": ["Education & Training"]
   },
   "LinkedIn": {
     "url": "https://nonprofit.linkedin.com/",
@@ -154,7 +161,7 @@
     "categories": ["Productivity & Analytics"]
   },
   "GitLab": {
-    "url": "https://about.gitlab.com/solutions/education/",
+    "url": "https://about.gitlab.com/solutions/nonprofit/join/",
     "about": "Complete DevOps platform with Git repository management and CI/CD pipelines.",
     "offer": "Free GitLab Ultimate for qualifying educational and open source projects including nonprofits.",
     "score": 85,

@@ -1,6 +1,6 @@
 # Awesome Free Nonprofits [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Nonprofits often work with limited budgets, but many companies offer free or heavily discounted services to help them achieve their mission. This list compiles the best free offerings available for qualified nonprofit organizations.
+Free and discounted technology programs available for qualified nonprofit organizations.
 
 ## Contents
 
@@ -11,7 +11,6 @@ Nonprofits often work with limited budgets, but many companies offer free or hea
 - [Productivity & Analytics](#productivity--analytics)
 - [Education & Training](#education--training)
 - [Business & Operations](#business--operations)
-- [Eligibility](#eligibility)
 
 ## Infrastructure & Security
 
@@ -24,14 +23,14 @@ Nonprofits often work with limited budgets, but many companies offer free or hea
 
 ## Design & Creative
 
-- [Adobe](https://www.adobe.com/es/nonprofits.html) - Professional creative software including Photoshop, Illustrator, and Premiere Pro.
+- [Adobe](https://www.adobe.com/nonprofits.html) - Professional creative software including Photoshop, Illustrator, and Premiere Pro.
 - [Canva](https://www.canva.com/canva-for-nonprofits/) - Online design platform for creating graphics, presentations, and marketing materials.
 
 ## Communication & Collaboration
 
 - [Atlassian](https://www.atlassian.com/software/views/community-license-request) - Team collaboration tools including Confluence, Jira, and Trello.
 - [Google](https://www.google.com/nonprofits/) - Productivity and collaboration suite with email, video meetings, chat, and cloud storage.
-- [Slack](https://slack.com/pricing) - Team communication platform with channels, direct messaging, and video calls.
+- [Slack](https://slack.com/help/articles/204368833-Apply-for-the-Slack-for-Nonprofits-discount) - Team communication platform with channels, direct messaging, and video calls.
 - [Zoom](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0080298) - Video conferencing platform for virtual meetings, webinars, and events.
 
 ## Marketing & CRM
@@ -47,7 +46,7 @@ Nonprofits often work with limited budgets, but many companies offer free or hea
 - [Asana](https://asana.com/nonprofit) - Project and task management platform for organizing work.
 - [Claude](https://claude.com/solutions/nonprofits) - AI assistant for writing, analysis, coding, and research tasks.
 - [GitHub](https://github.com/solutions/industry/nonprofits) - Code hosting platform with repositories, code review, and issue tracking.
-- [GitLab](https://about.gitlab.com/solutions/education/) - Complete DevOps platform with Git repository management and CI/CD pipelines.
+- [GitLab](https://about.gitlab.com/solutions/nonprofit/join/) - Complete DevOps platform with Git repository management and CI/CD pipelines.
 - [Make](https://www.make.com/en/ngo-program) - No-code visual automation platform for connecting apps and building workflows.
 - [Monday.com](https://monday.com/nonprofits) - Visual work operating system for managing projects and workflows.
 - [Tableau](https://www.tableau.com/foundation) - Professional data visualization and business intelligence platform.
@@ -56,6 +55,7 @@ Nonprofits often work with limited budgets, but many companies offer free or hea
 ## Education & Training
 
 - [Kahoot!](https://kahoot.com/register/pricing-nonprofit/) - Interactive learning and engagement platform for quizzes, presentations, training, and events.
+- [Thinkific](https://www.thinkific.com/non-profit/) - Online course platform for creating, marketing, and selling educational content.
 
 ## Business & Operations
 
@@ -64,7 +64,11 @@ Nonprofits often work with limited budgets, but many companies offer free or hea
 - [Stripe](https://stripe.com/en-es/industries/nonprofits) - Online payment infrastructure for accepting donations and managing subscriptions.
 - [TechSoup](https://www.techsoup.org/) - Technology marketplace providing donated and discounted products from major partners.
 
-## Eligibility
+## Contributing
+
+We welcome contributions! Please see our [contribution guidelines](contributing.md) for details on how to add new services or update existing ones.
+
+## Footnotes
 
 Most programs require proof of nonprofit status. Common requirements include:
 - 501(c)(3) status in the United States
@@ -73,16 +77,4 @@ Most programs require proof of nonprofit status. Common requirements include:
 
 Each service has its own eligibility requirements. Please check the specific provider's nonprofit program page for details.
 
-## Contributing
-
-We welcome contributions! Please see our [contribution guidelines](contributing.md) for details on how to add new services or update existing ones.
-
-## Footnotes
-
-[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0)
-
-To the extent possible under law, the contributors have waived all copyright and related or neighboring rights to this work.
-
-An interactive web application is available at [nonprofits.athman3.com](https://nonprofits.athman3.com) to explore these services with search and filtering functionality. The application features a modern design with dark mode support and is fully responsive.
-
-For developers interested in contributing to the web application or running it locally: The project includes a React application built with Vite, Tailwind CSS, and shadcn/ui components. The application automatically generates from the services data. For setup and deployment instructions, please refer to [DEPLOYMENT.md](DEPLOYMENT.md).
+An interactive web application is available at [nonprofits.athman3.com](https://nonprofits.athman3.com) to explore these services with search and filtering functionality.

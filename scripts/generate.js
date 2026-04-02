@@ -108,7 +108,7 @@ function generateReadme(servicesData) {
   // Build README content
   let readme = `# Awesome Free Nonprofits [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Nonprofits often work with limited budgets, but many companies offer free or heavily discounted services to help them achieve their mission. This list compiles the best free offerings available for qualified nonprofit organizations.
+Free and discounted technology programs available for qualified nonprofit organizations.
 
 ## Contents
 
@@ -120,7 +120,7 @@ Nonprofits often work with limited budgets, but many companies offer free or hea
       readme += `- [${category}](#${categoryToSlug(category)})\n`;
     }
   }
-  readme += `- [Eligibility](#eligibility)\n`;
+  // Eligibility is informational content, not curated items — it goes in Footnotes, not in the TOC
 
   // Generate category sections
   for (const category of CATEGORY_ORDER) {
@@ -133,9 +133,13 @@ Nonprofits often work with limited budgets, but many companies offer free or hea
     }
   }
 
-  // Add Eligibility section
+  // Add Contributing section
   readme += `
-## Eligibility
+## Contributing
+
+We welcome contributions! Please see our [contribution guidelines](contributing.md) for details on how to add new services or update existing ones.
+
+## Footnotes
 
 Most programs require proof of nonprofit status. Common requirements include:
 - 501(c)(3) status in the United States
@@ -144,19 +148,7 @@ Most programs require proof of nonprofit status. Common requirements include:
 
 Each service has its own eligibility requirements. Please check the specific provider's nonprofit program page for details.
 
-## Contributing
-
-We welcome contributions! Please see our [contribution guidelines](contributing.md) for details on how to add new services or update existing ones.
-
-## Footnotes
-
-[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0)
-
-To the extent possible under law, the contributors have waived all copyright and related or neighboring rights to this work.
-
-An interactive web application is available at [nonprofits.athman3.com](https://nonprofits.athman3.com) to explore these services with search and filtering functionality. The application features a modern design with dark mode support and is fully responsive.
-
-For developers interested in contributing to the web application or running it locally: The project includes a React application built with Vite, Tailwind CSS, and shadcn/ui components. The application automatically generates from the services data. For setup and deployment instructions, please refer to [DEPLOYMENT.md](DEPLOYMENT.md).
+An interactive web application is available at [nonprofits.athman3.com](https://nonprofits.athman3.com) to explore these services with search and filtering functionality.
 `;
 
   return readme;
