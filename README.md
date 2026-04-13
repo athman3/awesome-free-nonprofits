@@ -50,6 +50,7 @@ Free and discounted technology programs available for qualified nonprofit organi
 - [GitLab](https://about.gitlab.com/solutions/nonprofit/join/) - Complete DevOps platform with Git repository management and CI/CD pipelines.
 - [Make](https://www.make.com/en/ngo-program) - No-code visual automation platform for connecting apps and building workflows.
 - [Monday.com](https://monday.com/nonprofits) - Visual work operating system for managing projects and workflows.
+- [OpenAI](https://openai.com/index/introducing-openai-for-nonprofits/) - AI assistant for writing, research, coding, data analysis, and creative tasks.
 - [Tableau](https://www.tableau.com/foundation) - Professional data visualization and business intelligence platform.
 - [Trello](https://trello.com/use-cases/nonprofits) - Visual collaboration tool using boards, lists, and cards.
 

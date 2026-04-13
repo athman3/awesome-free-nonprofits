@@ -60,7 +60,7 @@
     "about": "AI assistant for writing, analysis, coding, and research tasks.",
     "offer": "Discounted Team plan at $8/user/month with nonprofit connectors (Blackbaud, Benevity, Candid), SSO, and free AI Fluency training course.",
     "score": 92,
-    "categories": ["Productivity & Analytics", "Communication & Collaboration"]
+    "categories": ["Productivity & Analytics", "Communication & Collaboration", "Education & Training"]
   },
   "Atlassian": {
     "url": "https://www.atlassian.com/software/views/community-license-request",
@@ -201,6 +201,13 @@
     "offer": "Up to 61% discount on annual eSignature plans with templates and 900+ integrations.",
     "score": 60,
     "categories": ["Business & Operations"]
+  },
+  "OpenAI": {
+    "url": "https://openai.com/index/introducing-openai-for-nonprofits/",
+    "about": "AI assistant for writing, research, coding, data analysis, and creative tasks.",
+    "offer": "Up to 75% discount on ChatGPT Business and Enterprise plans, plus access to a $50M People-First AI Fund for eligible U.S. 501(c)(3) nonprofits.",
+    "score": 91,
+    "categories": ["Productivity & Analytics", "Education & Training", "Communication & Collaboration"]
   },
   "PayPal": {
     "url": "https://www.paypal.com/charities",
