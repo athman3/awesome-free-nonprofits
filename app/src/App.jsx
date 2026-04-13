@@ -219,12 +219,12 @@ function App() {
               <span className="text-base">🇩🇿</span>
               Built by
               <a
-                href="https://github.com/ATHman3"
+                href="https://github.com/Athman3"
                 className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                ATHman3
+                Athman3
               </a>
             </span>
           </div>

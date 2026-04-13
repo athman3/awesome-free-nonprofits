@@ -30,6 +30,7 @@ Free and discounted technology programs available for qualified nonprofit organi
 
 - [Atlassian](https://www.atlassian.com/software/views/community-license-request) - Team collaboration tools including Confluence, Jira, and Trello.
 - [Google](https://www.google.com/nonprofits/) - Productivity and collaboration suite with email, video meetings, chat, and cloud storage.
+- [Linktree](https://linktr.ee/s/about/charities) - Link-in-bio platform for centralizing all links, social profiles, and content in one shareable page.
 - [Slack](https://slack.com/help/articles/204368833-Apply-for-the-Slack-for-Nonprofits-discount) - Team communication platform with channels, direct messaging, and video calls.
 - [Zoom](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0080298) - Video conferencing platform for virtual meetings, webinars, and events.
 
