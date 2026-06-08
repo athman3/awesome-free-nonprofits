@@ -42,4 +42,4 @@ app/src/data/services.json
 
 # OpenCode (user-specific)
 .opencode/
-
+.kiro/

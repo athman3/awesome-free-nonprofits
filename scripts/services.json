@@ -125,6 +125,13 @@
     "score": 91,
     "categories": ["Communication & Collaboration", "Marketing & CRM"]
   },
+  "Lovable": {
+    "url": "https://lovable.dev/partners/non-profit",
+    "about": "AI-powered web application builder that lets users create full-stack apps through natural language prompts.",
+    "offer": "Discounted Business or Enterprise plan, SSO, team workspaces, design templates, and dedicated nonprofit support.",
+    "score": 72,
+    "categories": ["Design & Creative"]
+  },
   "Make": {
     "url": "https://www.make.com/en/ngo-program",
     "about": "No-code visual automation platform for connecting apps and building workflows.",

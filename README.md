@@ -25,6 +25,7 @@ Free and discounted technology programs available for qualified nonprofit organi
 
 - [Adobe](https://www.adobe.com/nonprofits.html) - Professional creative software including Photoshop, Illustrator, and Premiere Pro.
 - [Canva](https://www.canva.com/canva-for-nonprofits/) - Online design platform for creating graphics, presentations, and marketing materials.
+- [Lovable](https://lovable.dev/partners/non-profit) - AI-powered web application builder that lets users create full-stack apps through natural language prompts.
 
 ## Communication & Collaboration
 
