@@ -1,3 +1,5 @@
+
+
 # Awesome Free Nonprofits [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 Free and discounted technology programs available for qualified nonprofit organizations.
@@ -64,7 +66,7 @@ Free and discounted technology programs available for qualified nonprofit organi
 
 - [DocuSign](https://ecom.docusign.com/nonprofit/plans/esignature) - Digital signature platform for electronic signatures and contract management.
 - [PayPal](https://www.paypal.com/charities) - Digital payment platform for accepting donations and processing payments.
-- [Stripe](https://stripe.com/en-es/industries/nonprofits) - Online payment infrastructure for accepting donations and managing subscriptions.
+- [Stripe](https://stripe.com/industries/nonprofits) - Online payment infrastructure for accepting donations and managing subscriptions.
 - [TechSoup](https://www.techsoup.org/) - Technology marketplace providing donated and discounted products from major partners.
 
 ## Contributing
