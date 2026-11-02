@@ -44,6 +44,15 @@ jobs:
           cd app
           npm run build
 
+      - name: Verify generated SEO content
+        run: npm --prefix app run test:seo
+
+      - name: Verify browser behavior
+        working-directory: app
+        run: |
+          npx playwright install --with-deps chromium
+          npm run test:browser
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

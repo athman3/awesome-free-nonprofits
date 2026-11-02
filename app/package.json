@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node ../scripts/generate-sitemap.js && vite build",
+    "build": "node ../scripts/generate-sitemap.js && vite build && node scripts/prerender.js",
     "lint": "eslint .",
+    "test:seo": "node --test src/__tests__/seo.test.js",
+    "test:browser": "playwright test",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -20,6 +22,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@playwright/test": "^1.64.1",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",

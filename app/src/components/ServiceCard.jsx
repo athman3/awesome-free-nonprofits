@@ -27,13 +27,17 @@ export function ServiceCard({ service, isFeatured, onCategoryClick }) {
       <CardHeader className="pb-4">
         <div className="flex items-center justify-between gap-4">
           <CardTitle className="text-2xl font-bold tracking-tight text-foreground">
-            {service.name}
+            <h3>{service.name}</h3>
           </CardTitle>
           {service.logo && (
             <div className="p-2 rounded-2xl bg-white shadow-sm dark:bg-zinc-800">
               <img
                 src={service.logo}
                 alt={`${service.name} logo`}
+                width="32"
+                height="32"
+                loading={isFeatured ? 'eager' : 'lazy'}
+                decoding="async"
                 className="h-8 w-8 object-contain"
                 onError={(e) => {
                   e.target.style.display = 'none';

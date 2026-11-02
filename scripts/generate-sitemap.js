@@ -1,5 +1,5 @@
 /**
- * Generate sitemap.xml with current timestamp
+ * Generate sitemap.xml for the canonical directory URL.
  */
 
 import fs from 'fs';
@@ -16,15 +16,10 @@ const DIST_SITEMAP_PATH = path.join(__dirname, '..', 'app', 'dist', 'sitemap.xml
 const SITE_URL = 'https://nonprofits.athman3.com/';
 
 function generateSitemap() {
-  const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
-
   const xmlContent = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>${SITE_URL}</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
   </url>
 </urlset>
 `;

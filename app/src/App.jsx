@@ -6,13 +6,20 @@ import { ThemeToggle } from '@/components/ThemeToggle'
 import { ServiceCard } from '@/components/ServiceCard'
 import { CategoryFilter } from '@/components/CategoryFilter'
 import { SearchBar } from '@/components/SearchBar'
+import { StructuredData } from '@/components/StructuredData'
 import servicesData from '@/data/services.json'
 import awesomeLogo from '@/assets/awesome-logo-svg-vector.svg'
 
-function App() {
+/**
+ * @param {Object} props - Component props.
+ * @param {string} [props.initialSearchQuery] - Search typed before React loaded.
+ */
+function App({ initialSearchQuery } = {}) {
   // Read initial state from URL query parameters (supports ?q= and ?category=)
-  const urlParams = new URLSearchParams(window.location.search)
-  const initialQuery = urlParams.get('q') || ''
+  const urlParams = new URLSearchParams(
+    typeof window === 'undefined' ? '' : window.location.search
+  )
+  const initialQuery = initialSearchQuery ?? urlParams.get('q') ?? ''
   const initialCategory = urlParams.get('category') || 'all'
 
   const [searchQuery, setSearchQuery] = useState(initialQuery)
@@ -93,6 +100,7 @@ function App() {
   return (
     <ThemeProvider defaultTheme="system">
       <div className="min-h-screen bg-zinc-50/50 dark:bg-zinc-950 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">
+        <StructuredData services={filteredServices} />
         {/* Header */}
         <header className="border-b border-zinc-200/50 dark:border-zinc-800/50 bg-white/70 dark:bg-zinc-950/70 backdrop-blur-xl sticky top-0 z-50">
           <div className="container mx-auto px-4 py-4">
