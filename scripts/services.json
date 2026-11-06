@@ -236,5 +236,12 @@
     "offer": "Donated and discounted products from 100+ partners including Microsoft, Adobe, Cisco, and AWS.",
     "score": 95,
     "categories": ["Business & Operations"]
+  },
+  "Cookie Rocks": {
+    "url": "https://cookierocks.com/community/",
+    "about": "Cookie consent plugin for WordPress that runs entirely on the site.",
+    "offer": "Free Community key for non-commercial sites, such as associations without a shop, clubs and youth movements. One site per key, one key per person, renewed in one click each year.",
+    "score": 75,
+    "categories": ["Infrastructure & Security"]
   }
 }
