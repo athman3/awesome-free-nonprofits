@@ -67,6 +67,13 @@ Free and discounted technology programs available for qualified nonprofit organi
 - [Stripe](https://stripe.com/en-es/industries/nonprofits) - Online payment infrastructure for accepting donations and managing subscriptions.
 - [TechSoup](https://www.techsoup.org/) - Technology marketplace providing donated and discounted products from major partners.
 
+
+## Public Data APIs (Apify)
+
+- [Grants.gov Scraper](https://apify.com/publicrecords/grants-gov-scraper) - Open US federal grants: agency, deadline, eligibility and source link (Apify Actor, API + MCP).
+- [Federal Contracts Feed (SAM.gov + Grants.gov)](https://apify.com/publicrecords/govcon-opportunity-feed) - New US federal contract and grant notices from SAM.gov and Grants.gov in one feed (Apify Actor, API + MCP).
+- [USAspending Awards Scraper](https://apify.com/publicrecords/usaspending-awards-scraper) - US federal contract and grant awards by agency, recipient, NAICS and period (Apify Actor, API + MCP).
+
 ## Contributing
 
 We welcome contributions! Please see our [contribution guidelines](contributing.md) for details on how to add new services or update existing ones.
